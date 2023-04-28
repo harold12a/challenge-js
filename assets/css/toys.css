@@ -1,0 +1,15 @@
+:root
+{
+    --pink-beige: #F9DBBD;
+    --pink-light: #FFA5AB;
+    --pink-medium: #DA627D;
+    --pink-light-dark: #A53860;
+    --pink-dark: #450920;
+}
+
+/* ------ GENERAL ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
