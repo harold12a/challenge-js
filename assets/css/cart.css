@@ -27,6 +27,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 a {
     color: var(--pink-dark);
 }
@@ -70,7 +71,8 @@ a {
 }
 
 .navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.offcanvas-title {
     color: var(--pink-dark);
 }
 
