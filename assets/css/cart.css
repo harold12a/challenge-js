@@ -40,6 +40,10 @@ a {
     background-color: var(--pink-beige);
 }
 
+.navbar-mindy img {
+    max-height: 3rem;
+}
+
 .btn-primary,
 a {
     cursor:pointer;
@@ -51,7 +55,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 
     background-color: var(--pink-light);
     padding: 3rem 4rem 3rem 4rem;
