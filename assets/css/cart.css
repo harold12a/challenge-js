@@ -62,6 +62,7 @@ footer {
 footer {
     display: flex;
     justify-content: space-around;
+    color: var(--pink-dark);
 }
 
 .copyr {
@@ -75,8 +76,20 @@ footer {
 }
 
 .list-group {
-    --bs-list-group-bg: inherit;
-    --bs-list-group-border-color: inherit;
+    --bs-list-group-bg: var(--pink-medium);
+    --bs-list-group-border-color: var(--pink-medium);
+    gap: 1rem;
+}
+
+.list-group-horizontal > .list-group-item,
+.list-group-horizontal > .list-group-item:first-child:not(:last-child),
+.list-group-horizontal > .list-group-item:last-child:not(:first-child) {
+    border-radius: 50%;
+}
+
+.list-group-item a {
+    color: white;
+    font-size: larger;
 }
 
 /* ------ CART ------ */
