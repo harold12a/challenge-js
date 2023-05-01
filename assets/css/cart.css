@@ -50,23 +50,35 @@ a {
     cursor:pointer;
 }
 
-.navbar-mindy,
-footer {
+/* navbar */
+.navbar-mindy {
     background-color: var(--pink-light);
 }
 
-.navbar-mindy {
-    color: var(--pink-dark);
+.navbar-mindy,
+.navbar-brand {
     font-size: larger;
+    font-weight: bold;
 }
 
 .navbar-mindy img {
     max-height: 3rem;
 }
 
+.navbar-mindy a {
+    color: var(--pink-light-dark);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--pink-dark);
+}
+
+/* footer */
 footer {
     display: flex;
     justify-content: space-around;
+    background-color: var(--pink-light);
     color: var(--pink-dark);
     font-family: monospace;
 }
