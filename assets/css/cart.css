@@ -36,17 +36,18 @@ a {
     --bs-btn-disabled-border-color: var(--pink-light);
 }
 
-.navbar-mindy {
+.btn-primary,
+a {
+    cursor:pointer;
+}
+
+.navbar-mindy,
+footer {
     background-color: var(--pink-beige);
 }
 
 .navbar-mindy img {
     max-height: 3rem;
-}
-
-.btn-primary,
-a {
-    cursor:pointer;
 }
 
 /* ------ CART ------ */
