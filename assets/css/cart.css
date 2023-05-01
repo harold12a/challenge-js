@@ -55,6 +55,11 @@ footer {
     background-color: var(--pink-light);
 }
 
+.navbar-mindy {
+    color: var(--pink-dark);
+    font-size: larger;
+}
+
 .navbar-mindy img {
     max-height: 3rem;
 }
@@ -63,6 +68,7 @@ footer {
     display: flex;
     justify-content: space-around;
     color: var(--pink-dark);
+    font-family: monospace;
 }
 
 .copyr {
