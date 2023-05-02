@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+body{
+    background-color: #FFA5AB;
 }
 
 /*--------------navbar --------------*/
@@ -187,29 +191,24 @@ a{
 
 /*---------cards--------*/
 
-.card {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
-    height: 400px; /* establece la altura de la tarjeta en 400 píxeles */
-  }
-
   
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .card-img-top {
-    transition: transform 0.3s ease;
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
   }
-  
-  .card-img-top:hover {
-    transform: scale(1.2);
-  }
-.card-img-top {
-  transition: transform 0.3s ease;
-}
 
-.card-img-top:hover {
-  transform: scale(1.2) rotate(10deg);
-}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+ 
+ 
