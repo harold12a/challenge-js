@@ -53,8 +53,31 @@
     </nav>
 
     <!-- SECTION 2: main -->
-    <div class="d-flex justify-content-center align-items-center back-toys">
-        <h1>Toys</h1>
+    <div class="d-flex flex-column justify-content-center align-items-center back-toys">
+        <!-- filters -->
+        <div class="d-flex justify-content-between filters">
+            <!-- col 1: ordering -->
+            <div class="d-flex flex-column">
+                <h5>Ordenar por:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione una opción</option>
+                    <option value="asc">Ascendente</option>
+                    <option value="desc">Descendente</option>
+                </select>
+            </div>
+            <!-- col2: search by text -->
+            <div class="d-flex flex-column">
+                <h5>Buscar:</h5>
+                <form class=" search  d-flex " role="search">
+                    <input id="searchInTitle" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="buttonSearch" class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex grid-cards">
+            <h1>Juguetes</h1>
+            <div class="container-cards"></div>
+        </div>
     </div>
 
     <!-- SECTION 3: footer -->

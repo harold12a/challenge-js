@@ -114,6 +114,14 @@ footer {
 
 /* ------ TOYS ------ */
 
+.back-toys {
+    gap: 3rem;
+}
+
+.filters {
+    width: 60%;
+}
+
 /* ------ MEDIA ------ */
 
 /* phones: <576px (xs | col-x) */
