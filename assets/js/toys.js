@@ -50,13 +50,12 @@ async function filterData() {
  * que ingrese por parámetro */
 function printCards(array) {
     const containerCategory = document.getElementById('container-toys');
-    //containerCategory.innerHTML = '';
+    containerCategory.innerHTML = '';
 
     for (let i = 0; i < array.length; i++) {
 
-        //let id = `card${i + 1}`
-        //let div = createToyCard(id, array[i]);
-        //containerCategory.appendChild(div)
+        let div = createToyCard(array[i]);
+        containerCategory.appendChild(div)
 
     }
 }
@@ -72,10 +71,10 @@ function printEmpty() {
 }
 
 /* FUNCTION: Retorna UN div para cada juguete */
-function createToyCard(id, producto) {
+function createToyCard(producto) {
 
     let div = document.createElement('div');
-    div.id = id;
+    div.id = producto._id;
     div.className = 'card'
 
     div.innerHTML = `
@@ -93,4 +92,4 @@ function createToyCard(id, producto) {
             </div>
         </div>`
     return div
-  }
+}
