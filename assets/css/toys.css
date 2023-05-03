@@ -236,10 +236,6 @@ footer {
         gap: 1rem;
         padding: 1.5rem 0rem;
     }
-
-    footer {
-        padding: 1.5rem 0rem;
-    }
 }
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
@@ -270,10 +266,6 @@ footer {
 
     .grid-cards {
         gap: 1.5rem;
-        padding: 1.5rem 0rem;
-    }
-
-    footer {
         padding: 1.5rem 0rem;
     }
 }
