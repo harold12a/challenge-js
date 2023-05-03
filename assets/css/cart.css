@@ -75,6 +75,10 @@ a {
     background-color: var(--pink-light-op);
 }
 
+.badge-mindy {
+    background-color: var(--pink-light-dark);
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .offcanvas-title {
