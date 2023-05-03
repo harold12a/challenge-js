@@ -66,6 +66,10 @@ a {
     --bs-btn-disabled-border-color: var(--pink-medium);
 }
 
+option:checked {
+    color: var(--pink-light);
+}
+
 /* navbar */
 .navbar-mindy {
     background-color: var(--pink-light);
