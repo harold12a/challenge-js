@@ -1,4 +1,4 @@
-let url = `https://pro-talento.up.railway.app/api/mindy/products/`;
+let url = `https://pro-talento.up.railway.app/api/mindy/products`;
 
 let toys = [];
 
@@ -16,8 +16,10 @@ async function fecthApi() {
     document.getElementById('buttonSearch').addEventListener('click', (event) => {
         event.preventDefault();
         filterData();
-    })
-    /*document.querySelectorAll('.selectOrder').forEach((each) => each.addEventListener('click', filterData))*/
+    });
+    document.querySelector(".form-select").addEventListener('change', (event) => {
+      filterData();
+    });
 
   } catch (error) {
     console.log(error);
@@ -29,19 +31,29 @@ fecthApi();
 async function filterData() {
   try {
     let texto = document.getElementById('searchInText').value.toLowerCase();
+    console.log(texto);
 
-    url += `?nombre=${texto}&tipo=juguetes`;
+    let select = document.getElementById("select-ordering");
+    let value_selected = select.value;
+    // let label_selected = select.options[select.selectedIndex].text;
+
+    let url = `https://pro-talento.up.railway.app/api/mindy/products`;
+    url += `?tipo=juguete&orden=${value_selected}`;
+    if (texto.length != 0) {
+      url += `&nombre=${texto}`;
+    }
+    console.log(url);
     let response = await fetch(url);
     response = await response.json();
-    toysFiltered = response.products;
+    let toysFiltered = response.products;
 
     if (toysFiltered.length == 0) {
-      printEmpty()
+      printEmpty();
     } else {
-      printCards(toysFiltered)
+      printCards(toysFiltered);
     }
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 
 }
