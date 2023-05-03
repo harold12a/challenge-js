@@ -119,10 +119,6 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    background-color: var(--pink-beige);
-    border: none;
-    border-radius: 2rem;
 }
 
 /* phones: <576px (xs | col-x) */
@@ -134,7 +130,7 @@ footer {
     .card-cart {
         width: 90%;
         padding: 1.5rem;
-        gap: 1rem;
+        gap: 2rem;
     }
 }
 
@@ -147,6 +143,7 @@ footer {
     .card-cart {
         width: 85%;
         padding: 2rem;
+        gap: 2.5rem;
     }
 }
 
