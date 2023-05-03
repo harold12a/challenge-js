@@ -5,6 +5,7 @@
     --pink-medium: #DA627D;
     --pink-light-dark: #A53860;
     --pink-dark: #450920;
+    --pink-light-op: #c3898d7d;
 }
 
 /* ------ GENERAL ------ */
@@ -70,10 +71,19 @@ a {
     color: var(--pink-light-dark);
 }
 
+.navbar-mindy-two {
+    background-color: var(--pink-light-op);
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .offcanvas-title {
     color: var(--pink-dark);
+}
+
+.offcanvas-mindy-two {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* footer */
