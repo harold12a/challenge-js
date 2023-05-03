@@ -195,6 +195,10 @@ footer {
         height: auto;
     }
 
+    .card-mindy {
+        max-width: 40vw;
+    }
+
     .filters {
         padding-top: 2rem;
     }
@@ -229,8 +233,12 @@ footer {
     }
 
     .container-cards img {
-        width: 30vw;
+        width: 20vw;
         height: auto;
+    }
+
+    .card-mindy {
+        max-width: 25vw;
     }
 
     .filters {
@@ -261,8 +269,12 @@ footer {
     }
 
     .container-cards img {
-        width: 20vw;
+        width: 19vw;
         height: auto;
+    }
+
+    .card-mindy {
+        max-width: 20vw;
     }
 }
 
@@ -280,5 +292,13 @@ footer {
 
     .summary {
         padding-left: 4rem;
+    }
+}
+
+/* large pc: 1400 + (xl | col-xl-x) */
+@media only screen and (min-width: 1400px) {
+    .container-cards img {
+        width: 18vw;
+        height: auto;
     }
 }

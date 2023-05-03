@@ -75,7 +75,7 @@ function createToyCard(producto) {
 
     let div = document.createElement('div');
     div.id = producto._id;
-    div.className = 'card'
+    div.className = 'card card-mindy'
 
     div.innerHTML = `
         <img src="${producto.imagen}" alt="Toy">
