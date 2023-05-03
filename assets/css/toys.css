@@ -104,6 +104,10 @@ option:checked {
     justify-content: flex-end;
 }
 
+.badge-mindy {
+    background-color: var(--pink-light-dark);
+}
+
 /* footer */
 footer {
     display: flex;
