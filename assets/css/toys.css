@@ -33,6 +33,11 @@ a {
     color: var(--pink-dark);
 }
 
+.btn-primary,
+a {
+    cursor:pointer;
+}
+
 .btn-primary {
     --bs-btn-bg: var(--pink-light-dark);
     --bs-btn-border-color: var(--pink-light-dark);
@@ -45,11 +50,6 @@ a {
 
     --bs-btn-disabled-bg: var(--pink-light);
     --bs-btn-disabled-border-color: var(--pink-light);
-}
-
-.btn-primary,
-a {
-    cursor:pointer;
 }
 
 .btn-outline-success {
@@ -136,33 +136,12 @@ footer {
     align-items: center;
 }
 
-.list-group {
-    --bs-list-group-bg: var(--pink-medium);
-    --bs-list-group-border-color: var(--pink-medium);
-    gap: 1rem;
-}
-
-.list-group-horizontal > .list-group-item,
-.list-group-horizontal > .list-group-item:first-child:not(:last-child),
-.list-group-horizontal > .list-group-item:last-child:not(:first-child) {
-    border-radius: 50%;
-}
-
-.list-group-item a {
-    color: white;
-    font-size: larger;
-}
-
 .footer-sup {
     display: flex;
     justify-content: space-around;
 }
 
 /* ------ TOYS ------ */
-
-.back-toys {
-    gap: 3rem;
-}
 
 .filters {
     display: flex;
@@ -216,7 +195,6 @@ footer {
         margin: auto 1rem;
     }
 
-    .div-cart,
     .div-toys {
         width: 90%;
         padding: 1.5rem;
@@ -245,7 +223,6 @@ footer {
         margin: auto 1rem;
     }
 
-    .div-cart,
     .div-toys {
         width: 85%;
         padding: 2rem;
@@ -273,13 +250,11 @@ footer {
 /* small pc: 768px a 992px (md | col-md-x) */
 @media only screen and (min-width: 768px)
 {
-    .card-cart,
     .card-toys {
         width: 80%;
         gap: 0;
     }
 
-    .div-cart,
     .div-toys {
         padding-right: 2rem;
     }
@@ -310,13 +285,11 @@ footer {
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
 @media only screen and (min-width: 992px) {
-    .card-cart,
     .card-toys {
         width: 75%;
         padding: 3rem 4rem;
     }
 
-    .div-cart,
     .div-toys {
         padding-right: 3rem;
     }
@@ -337,12 +310,10 @@ footer {
 
 /* large pc: 1200px a 1400 (xl | col-xl-x) */
 @media only screen and (min-width: 1200px) {
-    .card-cart,
     .card-toys {
         padding: 4rem 5rem;
     }
 
-    .div-cart,
     .div-toys {
         padding-right: 4rem;
     }
