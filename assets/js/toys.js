@@ -91,16 +91,16 @@ function createToyCard(producto) {
 
     div.innerHTML = `
         <img src="${producto.imagen}" alt="Toy">
+        <ul class="product_item_hover">
+                <li><a class="btn btn-mindy-two" href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a class="btn btn-mindy-two" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
         <div class="card-description">
             <div class="card-title">
-                <h4  style="display: flex; justify-content: center; text-transform: uppercase;" >${producto.nombre}</h4>
-            </div>
-            <div class="card-text">
-                <p style=" font-family: Raleway;" >${producto.descripcion}</p>
+                <h4 style="text-align:center" >${producto.nombre}</h4>
             </div>
             <div class="card-link d-flex justify-content-evenly align-items-center">
-            <h2>${producto.precio}</h2>
-                <a href="#" style=" font-family: 'Lobster', cursive;" >Ver más</a>
+                <h2>$ ${producto.precio}</h2>
             </div>
         </div>`
     return div

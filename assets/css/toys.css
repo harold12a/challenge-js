@@ -175,7 +175,6 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    /*border: 1px solid var(--pink-dark);*/
 }
 
 .container-cards {
@@ -184,8 +183,28 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
 
-    background-color: var(--pink-light);
     padding: 1rem;
+}
+
+.card-mindy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.product_item_hover {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style-type: none;
+    padding-left: 0rem;
+    visibility: hidden;
+}
+
+.card-mindy img:hover + .product_item_hover {
+    visibility: visible;
 }
 
 /* ------ MEDIA ------ */
