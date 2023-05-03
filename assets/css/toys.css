@@ -89,10 +89,23 @@ a {
 /* footer */
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-mindy-two {
+    background-color: var(--pink-light-dark);
+    color: white;
+    border: 1px solid var(--pink-light-dark);
+    border-radius: 50%;
+}
+
+.bg-light-mindy {
     background-color: var(--pink-light);
-    color: var(--pink-dark);
-    font-family: monospace;
+}
+
+.bg-dark-mindy {
+    background-color: var(--pink-dark);
 }
 
 .copyr {
