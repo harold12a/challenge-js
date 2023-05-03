@@ -92,8 +92,8 @@ function createToyCard(producto) {
     div.innerHTML = `
         <img src="${producto.imagen}" alt="Toy">
         <ul class="product_item_hover">
-                <li><a class="btn btn-mindy-two" href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a class="btn btn-mindy-two" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a class="btn btn-mindy-two" href="#"><i class="bi bi-heart"></i></a></li>
+                <li><a class="btn btn-mindy-two" href="#"><i class="bi bi-cart-fill"></i></a></li>
         </ul>
         <div class="card-description">
             <div class="card-title">

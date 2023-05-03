@@ -112,8 +112,14 @@ footer {
 }
 
 .btn-mindy-two {
-    background-color: var(--pink-light-dark);
+    background-color: var(--pink-light);
     color: white;
+    border: 1px solid var(--pink-light);
+    border-radius: 50%;
+}
+
+.btn-mindy-two:hover {
+    color: var(--pink-light-dark);
     border: 1px solid var(--pink-light-dark);
     border-radius: 50%;
 }
@@ -182,8 +188,10 @@ footer {
     visibility: hidden;
 }
 
-.card-mindy img:hover + .product_item_hover {
+.card-mindy img:hover + .product_item_hover,
+.product_item_hover:hover {
     visibility: visible;
+    color: var(--pink-light-dark);
 }
 
 /* ------ MEDIA ------ */
