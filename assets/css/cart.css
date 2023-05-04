@@ -52,6 +52,24 @@ a {
     --bs-btn-disabled-border-color: var(--pink-light);
 }
 
+.btn-outline-success {
+    --bs-btn-color: var(--pink-medium);
+    --bs-btn-border-color: var(--pink-medium);
+
+    --bs-btn-hover-bg: var(--pink-medium);
+    --bs-btn-hover-border-color: var(--pink-medium);
+
+    --bs-btn-active-bg: var(--pink-medium);
+    --bs-btn-active-border-color: var(--pink-medium);
+
+    --bs-btn-disabled-color: var(--pink-medium);
+    --bs-btn-disabled-border-color: var(--pink-medium);
+}
+
+option:checked {
+    color: var(--pink-light);
+}
+
 /* navbar */
 .navbar-mindy {
     background-color: var(--pink-light);
@@ -120,6 +138,12 @@ footer a {
     border-radius: 50%;
 }
 
+.btn-mindy-two:hover {
+    color: var(--pink-light-dark);
+    border: 1px solid var(--pink-light-dark);
+    border-radius: 50%;
+}
+
 .bg-light-mindy {
     background-color: var(--pink-light);
 }
@@ -150,6 +174,8 @@ footer a {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/* ------ MEDIA ------ */
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
