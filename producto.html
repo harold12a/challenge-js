@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar productos</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <!--style css-->
+    <link rel="stylesheet" href="./producto.css">
+</head>
+
+<body>
+    <div class="container">  
+        <form id="form" >
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nombreHelp">
+          </div>
+          <div class="mb-3">
+            <label for="imagen" class="form-label">Imagen</label>
+            <input type="text" class="form-control" id="imagen" aria-describedby="imagenHelp">
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descripcion" rows="3" aria-describedby="descripcionHelp"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="tipo" class="form-label">Tipo</label>
+            <select class="form-select" aria-label="Tipo" id="tipo">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Medicamento</option>
+              <option value="2">Juguete</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="precio" aria-label="Precio" aria-describedby="precioHelp">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="stock" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="stock" aria-describedby="stockHelp">
+          </div>
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+      </div>
+      
+
+
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--producto.js-->
+    <script src="./producto.js"></script>
+</body>
+
+</html>
+
