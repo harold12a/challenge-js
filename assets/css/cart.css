@@ -97,6 +97,18 @@ footer {
     justify-content: space-between;
 }
 
+footer i {
+    color: var(--pink-medium);
+}
+
+footer .social i {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
 .btn-mindy-two {
     background-color: var(--pink-light-dark);
     color: white;
