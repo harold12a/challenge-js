@@ -92,7 +92,9 @@ option:checked {
 .navbar-mindy-two {
     background-color: var(--pink-light-op);
 }
-
+.nav-link-mindy {
+    font-size: 2rem;
+}
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .offcanvas-title {

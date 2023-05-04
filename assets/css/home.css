@@ -44,7 +44,8 @@ body{
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--dark);
+    /* color: var(--dark); */
+    color: var(--bs-nav-link-color);
     outline: none;
     transition: .5s;
 }
