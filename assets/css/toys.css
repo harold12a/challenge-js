@@ -94,7 +94,7 @@ option:checked {
 }
 
 .nav-link-mindy {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .badge-mindy {
@@ -132,9 +132,9 @@ footer a {
 }
 
 .btn-mindy-two {
-    background-color: var(--pink-light);
+    background-color: var(--pink-light-dark);
     color: white;
-    border: 1px solid var(--pink-light);
+    border: 1px solid var(--pink-light-dark);
     border-radius: 50%;
 }
 
