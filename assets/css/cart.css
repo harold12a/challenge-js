@@ -153,6 +153,20 @@ footer a {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1rem;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 0.5rem;
+    }
+
+    /* section main */
     .back-cart {
         margin: auto 1rem;
     }
@@ -166,6 +180,20 @@ footer a {
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1rem;
+    }
+
+    .navbar-brand {
+        margin-left: 6rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 6rem;
+    }
+
+    /* section main */
     .back-cart {
         margin: auto 1rem;
     }
@@ -178,8 +206,21 @@ footer a {
 }
 
 /* small pc: 768px a 992px (md | col-md-x) */
-@media only screen and (min-width: 768px)
-{
+@media only screen and (min-width: 768px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1.5rem;
+    }
+
+    .navbar-brand {
+        margin-left: 10%;
+    }
+
+    .navbar-mindy-two {
+        margin-right: 10%;
+    }
+
+    /* section main */
     .card-cart {
         width: 80%;
         gap: 0;
@@ -197,6 +238,16 @@ footer a {
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
 @media only screen and (min-width: 992px) {
+    /* section navbar */
+    .navbar-brand {
+        margin-left: 15%;
+    }
+
+    .navbar-mindy-two {
+        margin-right: 15%;
+    }
+
+    /* section main */
     .card-cart {
         width: 75%;
         padding: 3rem 4rem;
@@ -213,6 +264,12 @@ footer a {
 
 /* large pc: 1200px a 1400 (xl | col-xl-x) */
 @media only screen and (min-width: 1200px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1.8rem;
+    }
+
+    /* section main */
     .card-cart {
         padding: 4rem 5rem;
     }
