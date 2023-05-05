@@ -11,6 +11,7 @@ async function fecthApi() {
     toys = response.products.filter((item) => item.tipo==="Juguete");
     console.log(toys);
 
+    temp();
     printCards(toys);
 
     document.getElementById('buttonSearch').addEventListener('click', (event) => {
@@ -144,7 +145,6 @@ let addToFav = (producto_id) => {
 
 /* FUNCTION: agrega producto(juguete) al carrito */
 let addToCart = (producto_id) => {
-  console.log(producto_id);
   let storage = localStorage.getItem('cart');
   let data = [];
 
@@ -158,4 +158,12 @@ let addToCart = (producto_id) => {
   contador_unidades.innerHTML = data.length
 
   localStorage.setItem('cart', JSON.stringify(data));
+}
+
+
+function temp() {
+  let data_cart = JSON.parse(localStorage.getItem('cart')) ?? []
+  let contador_unidades = document.getElementById("cart-count");
+  contador_unidades.innerHTML = ``
+  contador_unidades.innerHTML = data_cart.length
 }
