@@ -8,56 +8,6 @@
     --pink-light-op: #c3898d7d;
 }
 
-/*--------------navbar --------------*/
-/*.navbar-light .navbar-nav .nav-link {
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    margin-left: 30px;
-    padding: 30px 0;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--bs-nav-link-color);
-    outline: none;
-    transition: .5s;
-}
-.navbar-nav {
-    color: #DA627D;
-}
-
-.btn-cart{
-  background-color: white;
-}
-
-.sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 20px 0;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
-}*/
-
-@media (min-width: 618px) {
-    .navbar-light .navbar-nav .nav-link::before {
-        position: absolute;
-        content: "";
-        width: 0;
-        height: 7px;
-        top: -4px;
-        left: 50%;
-        background: var(--primary);
-        transition: .5s;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
-        margin-left: 0;
-        padding: 10px 0;
-    }
-}
-
 /*------------------- hero---------------*/
 .hero-header {
     background: url(../images/hero.jpg) top right no-repeat;
