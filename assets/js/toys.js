@@ -84,6 +84,7 @@ function printEmpty() {
 
 /* FUNCTION: Retorna UN div para cada juguete */
 function createToyCard(producto) {
+    // let data = JSON.parse(localStorage.getItem('favoritos')) ?? []
 
     let div = document.createElement('div');
     div.id = producto._id;
@@ -94,7 +95,7 @@ function createToyCard(producto) {
         <ul class="product_item_hover">
             <li>
                 <button class="btn btn-mindy-two isFavorite" onclick='addToFav("${producto._id}")'>
-                    <i class="bi bi-heart"></i>
+                    <i id="fav${producto._id}" class="bi bi-heart"></i>
                 </button>
             </li>
             <li>
@@ -123,10 +124,14 @@ let addToFav = (producto_id) => {
   if (storage?.length>0) {
     data = JSON.parse(storage)
   }
+
+  let selector = document.getElementById("fav"+producto_id);
   if (data.includes(producto_id)) {
     data = data.filter(each => each !== producto_id);
+    selector.className = "bi-heart-fill"
   } else {
     data.push(producto_id);
+    selector.className = "bi-heart"
   }
   localStorage.setItem('favoritos', JSON.stringify(data));
 }
