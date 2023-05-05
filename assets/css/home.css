@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.btn-play {
+/*.btn-play {
     position: relative;
     display: block;
     box-sizing: content-box;
@@ -106,43 +106,62 @@
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
         opacity: 0;
     }
-}
-
-/*------- offer -----------*/
-
-.bg-offer {
-    background: url(../images/offer.jpg) top right no-repeat;
-    background-size: cover;
-}
-
-.border-mindy {
-    border-left: 5px solid var(--pink-light-dark);
-}
+}*/
 
 /*---------- about us -----------*/
 
-.text{
-   color:#DA627D;
+.text {
+    color: var(--pink-medium);
 }
 
-.nav-button{
-    background-color: #DA627D;
-    color: white;
+.about {
+    border-left: 5px solid var(--pink-medium);
+    padding-left: 5rem;
+    margin-bottom: 5rem;
 }
 
-.nosotros{
-    background-color: #DA627D;
-    color: white;
+.btn-hover-about:hover {
+    color: var(--pink-light-dark);
 }
 
-/*----------footer -----------*/
-
-.footer{
-    display: flex;
-    justify-content: space-around;
+.container-about-mindy h1,
+.container-prod-mindy h1 {
+    font-size: 3.645rem;
 }
 
-/*---------cards--------*/
+.container-about-mindy h4 {
+    font-size: 2.435rem;
+}
+
+.container-about-mindy h6,
+.container-about-mindy p,
+.container-about-mindy button,
+.container-prod-mindy h6 {
+    font-size: 1.6rem;
+}
+
+.p-mision-vision {
+    padding: 2rem;
+}
+
+/*--------- cards products --------*/
+
+.header-prod-mindy {
+    padding: 10%;
+}
+
+.container-prod-mindy {
+    text-transform: uppercase;
+}
+
+.container-prod-mindy h1 {
+    color: #212529;
+    font-weight: 300;
+}
+
+.container-prod-mindy h6 {
+    color: var(--pink-light-dark);
+}
 
 .swiper {
     width: 100%;
@@ -160,4 +179,22 @@
 .swiper-slide img {
     display: block;
     width: 100%;
+}
+
+/*------- offer -----------*/
+
+.bg-offer {
+    background: url(../images/offer.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+.border-mindy {
+    border-left: 5px solid var(--pink-light-dark);
+}
+
+/*----------footer -----------*/
+
+.footer{
+    display: flex;
+    justify-content: space-around;
 }
