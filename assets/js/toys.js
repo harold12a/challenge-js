@@ -105,7 +105,7 @@ function createToyCard(producto) {
                 </button>
             </li>
             <li>
-                <button class="btn btn-mindy-two addToCart">
+                <button class="btn btn-mindy-two addToCart" onclick='addToCart("${producto._id}")'>
                     <i class="bi bi-cart-fill"></i>
                 </button>
             </li>
@@ -140,4 +140,22 @@ let addToFav = (producto_id) => {
     selector.className = "bi-heart"
   }
   localStorage.setItem('favoritos', JSON.stringify(data));
+}
+
+/* FUNCTION: agrega producto(juguete) al carrito */
+let addToCart = (producto_id) => {
+  console.log(producto_id);
+  let storage = localStorage.getItem('cart');
+  let data = [];
+
+  if (storage?.length>0) {
+    data = JSON.parse(storage)
+  }
+
+  let contador_unidades = document.getElementById("cart-count");
+  data.push(producto_id);
+  contador_unidades.innerHTML = ``
+  contador_unidades.innerHTML = data.length
+
+  localStorage.setItem('cart', JSON.stringify(data));
 }
