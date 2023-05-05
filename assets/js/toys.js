@@ -115,6 +115,14 @@ function createToyCard(producto) {
 }
 
 /* FUNCTION: agrega producto(juguete) a favoritos */
-let addToFav = (producto) => {
-  console.log(producto)
+let addToFav = (producto_id) => {
+  // console.log(producto_id);
+  let storage = localStorage.getItem('favoritos');
+  let data = [];
+
+  if (storage?.length>0) {
+    data = JSON.parse(storage)
+  }
+  data.push(producto_id);
+  localStorage.setItem('favoritos', JSON.stringify(data));
 }
