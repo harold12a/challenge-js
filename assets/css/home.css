@@ -64,6 +64,33 @@
     background-size: cover;
 }
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.2;
+    gap: 0.8rem;
+}
+
+.hero-container h1{
+    font-size: 5.525rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--pink-medium);
+}
+
+.hero-container h2{
+    font-size: 3.175rem;
+    text-transform: uppercase;
+}
+
+.hero-container p{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
 .btn-play {
     position: relative;
     display: block;
