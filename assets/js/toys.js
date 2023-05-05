@@ -92,8 +92,16 @@ function createToyCard(producto) {
     div.innerHTML = `
         <img src="${producto.imagen}" alt="Toy">
         <ul class="product_item_hover">
-                <li><a class="btn btn-mindy-two" href="#"><i class="bi bi-heart"></i></a></li>
-                <li><a class="btn btn-mindy-two" href="#"><i class="bi bi-cart-fill"></i></a></li>
+            <li>
+                <button class="btn btn-mindy-two isFavorite" onclick='addToFav("${producto._id}")'>
+                    <i class="bi bi-heart"></i>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-mindy-two addToCart">
+                    <i class="bi bi-cart-fill"></i>
+                </button>
+            </li>
         </ul>
         <div class="card-description">
             <div class="card-title">
@@ -104,4 +112,9 @@ function createToyCard(producto) {
             </div>
         </div>`
     return div
+}
+
+/* FUNCTION: agrega producto(juguete) a favoritos */
+let addToFav = (producto) => {
+  console.log(producto)
 }
