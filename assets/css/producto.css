@@ -8,16 +8,11 @@
     --pink-light-op: #c3898d7d;
 }
 
-html
-{
-    font-size: 62.5%;
-}
-
 .container-form {
   width: 40vw;
   margin: 20px auto;
   padding: 20px;
-  background-color: var(--pink-light);/**/
+  background-color: var(--pink-light);
 }
 
 .btn-mindy {
@@ -32,7 +27,7 @@ html
 
 .form-label {
   font-weight: bold;
-  font-size: 1.2rem;/**/
+  font-size: 1.6rem;
   margin-bottom: 5px;
 }
 
@@ -44,7 +39,6 @@ textarea.form-control {
   background-color: white;
   border: 1px solid #ced4da;
   border-radius: 5px;
-  font-size: 1.1rem;
   height: calc(1.99em + 1.3rem + 2px);
 }
 
