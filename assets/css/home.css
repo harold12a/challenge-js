@@ -9,7 +9,7 @@
 }
 
 /*--------------navbar --------------*/
-.navbar-light .navbar-nav .nav-link {
+/*.navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
     margin-left: 30px;
@@ -17,7 +17,6 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    /* color: var(--dark); */
     color: var(--bs-nav-link-color);
     outline: none;
     transition: .5s;
@@ -37,8 +36,7 @@
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
-}
-
+}*/
 
 @media (min-width: 618px) {
     .navbar-light .navbar-nav .nav-link::before {
