@@ -8,34 +8,6 @@
     --pink-light-op: #c3898d7d;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-
-body{
-    background-color: var(--pink-beige);
-}
-
-.btn-primary {
-    cursor:pointer;
-
-    --bs-btn-bg: var(--pink-light-dark);
-    --bs-btn-border-color: var(--pink-light-dark);
-
-    --bs-btn-hover-bg: var(--pink-medium);
-    --bs-btn-hover-border-color: var(--pink-medium);
-
-    --bs-btn-active-bg: var(--pink-medium);
-    --bs-btn-active-border-color: var(--pink-medium);
-
-    --bs-btn-disabled-bg: var(--pink-light);
-    --bs-btn-disabled-border-color: var(--pink-light);
-}
-
 /*--------------navbar --------------*/
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
@@ -69,7 +41,6 @@ body{
 
 
 @media (min-width: 618px) {
-
     .navbar-light .navbar-nav .nav-link::before {
         position: absolute;
         content: "";
@@ -80,10 +51,6 @@ body{
         background: var(--primary);
         transition: .5s;
     }
-
-    /* .navbar-toggler-icon{
-    } */
-
 }
 
 @media (max-width: 991.98px) {
@@ -167,9 +134,14 @@ body{
 }
 
 /*------- offer -----------*/
+
 .bg-offer {
     background: url(../images/offer.jpg) top right no-repeat;
     background-size: cover;
+}
+
+.border-mindy {
+    border-left: 5px solid var(--pink-light-dark);
 }
 
 /*---------- about us -----------*/
@@ -177,6 +149,7 @@ body{
 .text{
    color:#DA627D;
 }
+
 .nav-button{
     background-color: #DA627D;
     color: white;
@@ -188,36 +161,10 @@ body{
 }
 
 /*----------footer -----------*/
-a{
-    text-decoration: none;
-    color: var(--pink-dark);
-}
+
 .footer{
     display: flex;
     justify-content: space-around;
-}
-
-footer i {
-    color: #DA627D;
-}
-
-footer .social i {
-    color: white;
-}
-
-.bg-light-mindy {
-    background-color: var(--pink-light);
-}
-
-.bg-dark-mindy {
-    background-color: var(--pink-dark);
-}
-
-.btn-mindy-two {
-    background-color: var(--pink-light-dark);
-    color: white;
-    border: 1px solid var(--pink-light-dark);
-    border-radius: 50%;
 }
 
 /*---------cards--------*/
