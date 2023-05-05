@@ -32,6 +32,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    -webkit-box-shadow: 0px 0px 30px 0px var(--pink-light-op);
+    -moz-box-shadow: 0px 0px 30px 0px var(--pink-light-op);
+    box-shadow: 0px 0px 30px 0px var(--pink-light-op);
 }
 
 .product_item_hover {
