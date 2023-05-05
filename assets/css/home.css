@@ -8,6 +8,10 @@
     --pink-light-op: #c3898d7d;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*------------------- hero---------------*/
 .hero-header {
     background: url(../images/hero.jpg) top right no-repeat;
@@ -126,7 +130,8 @@
 
 .container-about-mindy h1,
 .container-prod-mindy h1,
-.container-offer-mindy h1 {
+.container-offer-mindy h1,
+.header-blog-mindy h1 {
     font-size: 3.645rem;
 }
 
@@ -139,7 +144,8 @@
 .container-about-mindy button,
 .container-prod-mindy h6,
 .container-offer-mindy h6,
-.container-offer-mindy p {
+.container-offer-mindy p,
+.header-blog-mindy h6 {
     font-size: 1.6rem;
 }
 
@@ -218,6 +224,23 @@
 .link-as-btn a {
     font-size: 1.6rem;
     padding: 2rem 4rem;
+}
+
+/*----------blog -----------*/
+
+.main-blog-mindy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    font-size: 1.6rem;
+}
+
+.flex-blog-mindy {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex-wrap: wrap;
 }
 
 /*----------footer -----------*/
