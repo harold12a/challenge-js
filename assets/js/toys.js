@@ -123,6 +123,10 @@ let addToFav = (producto_id) => {
   if (storage?.length>0) {
     data = JSON.parse(storage)
   }
-  data.push(producto_id);
+  if (data.includes(producto_id)) {
+    data = data.filter(each => each !== producto_id);
+  } else {
+    data.push(producto_id);
+  }
   localStorage.setItem('favoritos', JSON.stringify(data));
 }
