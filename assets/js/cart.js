@@ -53,8 +53,10 @@ function printCards(array) {
 
     const containerCategory = document.getElementById('items');
     containerCategory.innerHTML = ``;
+    let subtotal = 0;
 
     array.forEach(product => {
+        subtotal += product.cant * product.precio;
         let div = document.createElement('div');
         div.id = product._id;
         div.className = 'row d-flex justify-content-between align-items-center mb-4'
@@ -78,14 +80,27 @@ function printCards(array) {
 
             <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-nowrap">
                 <h6 class="fw-bold text-body-secondary text-end">Subtotal</h6>
-                <h6 class="text-end" id="abc">$ 44.00</h6>
+                <h6 class="text-end" id="abc">$ ${product.cant * product.precio}</h6>
             </div>
         `;
         containerCategory.appendChild(div);
     });
 
     // parte summary
-    const itemsSummary = document.getElementById('amount');
-    itemsSummary.innerHTML = ``;
-    itemsSummary.innerHTML = array.length + " items";
+    printSummary(array.length, subtotal)
+}
+
+/* FUNCTION: Pinta los valores de la sección summary */
+function printSummary(cant, subtotal) {
+    const p_items = document.getElementById('amount');
+    p_items.innerHTML = `${cant} items`;
+
+    const p_subtotal = document.getElementById('subtotal');
+    p_subtotal.innerHTML = `$ ${subtotal}`;
+
+    const p_shipping = document.getElementById('shipping');
+    p_shipping.innerHTML = `$ 2`;
+
+    const p_total = document.getElementById('total');
+    p_total.innerHTML = `$ ${subtotal + 2}`;
 }
