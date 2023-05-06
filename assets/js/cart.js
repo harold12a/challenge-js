@@ -53,10 +53,9 @@ function printCards(array) {
 
     const containerCategory = document.getElementById('items');
     containerCategory.innerHTML = ``;
-    let subtotal = 0;
+    let [cant, subtotal] = calculate_subtotal(array);
 
     array.forEach(product => {
-        subtotal += product.cant * product.precio;
         let div = document.createElement('div');
         div.id = product._id;
         div.className = 'row d-flex justify-content-between align-items-center mb-4'
@@ -74,20 +73,21 @@ function printCards(array) {
 
             <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
                 <h6 class="fw-bold text-body-secondary">Cantidad</h6>
-                <input id="form1" min="0" name="quantity" value="${product.cant}" type="number"
-                class="form-control form-control-sm" />
+                <input id="input${product._id}" class="form-control form-control-sm quantity"
+                name="quantity" type="number" min="0" value="${product.cant}" />
             </div>
 
             <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-nowrap">
                 <h6 class="fw-bold text-body-secondary text-end">Subtotal</h6>
-                <h6 class="text-end" id="abc">$ ${product.cant * product.precio}</h6>
+                <h6 class="text-end" id="subt${product._id}">
+                $ ${product.cant * product.precio}</h6>
             </div>
         `;
         containerCategory.appendChild(div);
     });
 
     // parte summary
-    printSummary(array.length, subtotal)
+    printSummary(cant, subtotal)
 }
 
 /* FUNCTION: Pinta los valores de la sección summary */
@@ -103,4 +103,15 @@ function printSummary(cant, subtotal) {
 
     const p_total = document.getElementById('total');
     p_total.innerHTML = `$ ${subtotal + 2}`;
+}
+
+/* FUNCTION: calcula subtotal */
+function calculate_subtotal(array) {
+    return (array.reduce((acc, obj) => {
+        let cant = acc[0]
+        let subtotal = acc[1]
+        cant = cant + obj.cant
+        subtotal = subtotal + (obj.precio * obj.cant)
+        return [cant, subtotal]
+    },[0,0]))
 }
