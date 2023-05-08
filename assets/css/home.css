@@ -185,13 +185,24 @@ a {
     justify-content: center;
     width: 80%;
     font-size: 1.6rem;
+    margin: 5rem;
 }
 
 .flex-blog-mindy {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 5rem;
     flex-wrap: wrap;
+}
+
+.blog-img-div {
+    display: flex;
+}
+
+.blog-img-div img {
+    width: 100%;
+    height: auto;
 }
 
 /*----------footer -----------*/
@@ -205,7 +216,6 @@ a {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
-    /* section about */
     .main-about {
         margin-top: 5rem;
         margin-bottom: 5rem;
@@ -219,14 +229,15 @@ a {
         width: 100%;
         height: auto;
     }
-    /* section products */
-    /* section offer */
-    /* section blog */
+
+    .blog-img-div img {
+        height: 50vh;
+        object-fit: cover;
+    }
 }
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
-    /* section about */
     .main-about {
         margin-top: 5rem;
         margin-bottom: 5rem;
@@ -240,9 +251,12 @@ a {
         width: 100%;
         height: auto;
     }
-    /* section products */
-    /* section offer */
-    /* section blog */
+
+    .blog-img-div img {
+        height: 50vh;
+        object-fit: contain;
+        padding: 2rem;
+    }
 }
 
 /* small pc: 768px a 992px (md | col-md-x) */
@@ -257,6 +271,20 @@ a {
 
     .section-about-txt {
         width: 60%;
+    }
+
+    .flex-blog-mindy {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .blog-item {
+        width: 48%;
+    }
+
+    .blog-img-div img {
+        height: 50vh;
+        object-fit: cover;
     }
 }
 
