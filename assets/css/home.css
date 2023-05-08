@@ -48,18 +48,17 @@ a {
 
 /*---------- about us -----------*/
 
-.text {
-    color: var(--pink-medium);
+.main-about {
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.border-mindy {
-    border-left: 5px solid var(--pink-medium);
-    padding-left: 5rem;
-    margin-bottom: 5rem;
-}
-
-.btn-hover-about:hover {
-    color: var(--pink-light-dark);
+.container-about-mindy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-about-mindy h1,
@@ -83,8 +82,22 @@ a {
     font-size: 1.6rem;
 }
 
+.border-mindy {
+    border-left: 5px solid var(--pink-medium);
+    padding-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.text {
+    color: var(--pink-medium);
+}
+
 .p-mision-vision {
     padding: 2rem;
+}
+
+.btn-hover-about:hover {
+    color: var(--pink-light-dark);
 }
 
 /*--------- cards products --------*/
@@ -182,4 +195,47 @@ a {
 .footer{
     display: flex;
     justify-content: space-around;
+}
+
+/* ------ MEDIA ------ */
+
+/* phones: <576px (xs | col-x) */
+@media only screen and (max-width: 575px) {
+    /* section hero */
+    /* section about */
+    .main-about {
+        margin: 5rem 0rem;
+    }
+    /* section products */
+    /* section offer */
+    /* section blog */
+}
+
+/* tablets: 576px a 768px (sm | col-sm-x) */
+@media only screen and (min-width: 576px) {
+    /* section navbar */
+}
+
+/* small pc: 768px a 992px (md | col-md-x) */
+@media only screen and (min-width: 768px) {
+    .section-about-img img {
+        width: 30vw;
+    }
+    .section-about-txt {
+        width: 60%;
+    }
+}
+
+/* medium pc: 992px a 1200px (lg | col-lg-x) */
+@media only screen and (min-width: 992px) {
+    /* section navbar */
+}
+
+/* large pc: 1200px a 1400 (xl | col-xl-x) */
+@media only screen and (min-width: 1200px) {
+    /* section navbar */
+}
+
+/* large pc: 1400 + (xl | col-xl-x) */
+@media only screen and (min-width: 1400px) {
 }
