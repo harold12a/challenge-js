@@ -15,6 +15,7 @@ async function fecthApi() {
             return response.products.find((obj) => obj._id === each)
         })
 
+        refresh_cart_in_navbar();
         printCards(current_fav);
     } catch (error) {
         console.log(error);
@@ -49,3 +50,12 @@ function printCards(array) {
         containerCategory.appendChild(div);
     });
 }
+
+/* FUNCTION: refresca el numero de elementos en el carrito */
+function refresh_cart_in_navbar() {
+    let data_cart = JSON.parse(localStorage.getItem('cart')) ?? []
+    console.log(data_cart)
+    let contador_unidades = document.getElementById("cart-count");
+    contador_unidades.innerHTML = ``
+    contador_unidades.innerHTML = data_cart.length
+  }
