@@ -1,7 +1,59 @@
-#cardsContainer{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 5px 20px 0px 20px;
-    font-family: 'Secular One', sans-serif;
+:root {
+  --pink-beige: #f9dbbd;
+  --pink-light: #ffa5ab;
+  --pink-medium: #da627d;
+  --pink-light-dark: #a53860;
+  --pink-dark: #450920;
+  --pink-light-op: #c3898d7d;
+}
+#cardsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 5px 20px 0px 20px;
+  font-family: "Secular One", sans-serif;
+}
+
+.card {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-title {
+  color: var(--pink-dark);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: var(--pink-medium);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-primary {
+  background-color: var(--pink-light);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: var(--pink-light-dark);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.card:hover {
+  background-color: var(--pink-light-op);
+  transform: scale(1.02);
 }
