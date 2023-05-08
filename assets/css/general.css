@@ -1,0 +1,244 @@
+:root
+{
+    --pink-beige: #F9DBBD;
+    --pink-light: #FFA5AB;
+    --pink-medium: #DA627D;
+    --pink-light-dark: #A53860;
+    --pink-dark: #450920;
+    --pink-light-op: #c3898d7d;
+}
+
+/* ------ GENERAL ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--pink-beige);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    color: var(--pink-dark);
+}
+
+.btn-primary,
+a {
+    cursor:pointer;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--pink-light-dark);
+    --bs-btn-border-color: var(--pink-light-dark);
+
+    --bs-btn-hover-bg: var(--pink-medium);
+    --bs-btn-hover-border-color: var(--pink-medium);
+
+    --bs-btn-active-bg: var(--pink-medium);
+    --bs-btn-active-border-color: var(--pink-medium);
+
+    --bs-btn-disabled-bg: var(--pink-light);
+    --bs-btn-disabled-border-color: var(--pink-light);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--pink-medium);
+    --bs-btn-border-color: var(--pink-medium);
+
+    --bs-btn-hover-bg: var(--pink-medium);
+    --bs-btn-hover-border-color: var(--pink-medium);
+
+    --bs-btn-active-bg: var(--pink-medium);
+    --bs-btn-active-border-color: var(--pink-medium);
+
+    --bs-btn-disabled-color: var(--pink-medium);
+    --bs-btn-disabled-border-color: var(--pink-medium);
+}
+
+option:checked {
+    color: var(--pink-light);
+}
+
+/* navbar */
+.navbar-mindy {
+    background-color: var(--pink-light);
+}
+
+.navbar-mindy,
+.navbar-brand {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.navbar-mindy img {
+    max-height: 3rem;
+}
+
+.navbar-mindy a {
+    color: var(--pink-light-dark);
+}
+
+.navbar-mindy-two {
+    background-color: var(--pink-light-op);
+}
+
+.nav-link-mindy {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.badge-mindy {
+    background-color: var(--pink-light-dark);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.offcanvas-title {
+    color: var(--pink-dark);
+}
+
+.offcanvas-mindy-two {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer i {
+    color: var(--pink-medium);
+}
+
+footer .social i {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.btn-mindy-two {
+    background-color: var(--pink-light-dark);
+    color: white;
+    border: 1px solid var(--pink-light-dark);
+    border-radius: 50%;
+}
+
+.btn-mindy-two:hover {
+    color: var(--pink-light-dark);
+    border: 1px solid var(--pink-light-dark);
+    border-radius: 50%;
+}
+
+.bg-light-mindy {
+    background-color: var(--pink-light);
+}
+
+.bg-dark-mindy {
+    background-color: var(--pink-dark);
+}
+
+.copyr {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-sup {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------ MEDIA ------ */
+
+/* phones: <576px (xs | col-x) */
+@media only screen and (max-width: 575px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1rem;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 0.5rem;
+    }
+}
+
+/* tablets: 576px a 768px (sm | col-sm-x) */
+@media only screen and (min-width: 576px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1rem;
+    }
+
+    .navbar-brand {
+        margin-left: 6rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 6rem;
+    }
+}
+
+/* small pc: 768px a 992px (md | col-md-x) */
+@media only screen and (min-width: 768px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1.5rem;
+    }
+
+    .navbar-brand {
+        margin-left: 10%;
+    }
+
+    .navbar-mindy-two {
+        margin-right: 10%;
+    }
+}
+
+/* medium pc: 992px a 1200px (lg | col-lg-x) */
+@media only screen and (min-width: 992px) {
+    /* section navbar */
+    .navbar-brand {
+        margin-left: 10%;
+    }
+
+    .navbar-mindy-two {
+        margin-right: 10%;
+    }
+}
+
+/* large pc: 1200px a 1400 (xl | col-xl-x) */
+@media only screen and (min-width: 1200px) {
+    /* section navbar */
+    .navbar {
+        --bs-navbar-padding-y: 1.8rem;
+    }
+}
+
+/* large pc: 1400 + (xl | col-xl-x) */
+@media only screen and (min-width: 1400px) {
+}
