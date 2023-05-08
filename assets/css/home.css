@@ -49,16 +49,13 @@ a {
 /*---------- about us -----------*/
 
 .main-about {
-    margin: 5rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
 }
 
 .container-about-mindy {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .container-about-mindy h1,
@@ -82,6 +79,12 @@ a {
     font-size: 1.6rem;
 }
 
+.section-about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .border-mindy {
     border-left: 5px solid var(--pink-medium);
     padding-left: 5rem;
@@ -103,7 +106,8 @@ a {
 /*--------- cards products --------*/
 
 .header-prod-mindy {
-    padding: 10%;
+    padding: 0 10%;
+    padding-top: 5rem;
 }
 
 .container-prod-mindy {
@@ -120,16 +124,17 @@ a {
 }
 
 .swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: auto;
 }
 
 .swiper-slide img {
@@ -201,10 +206,19 @@ a {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
-    /* section hero */
     /* section about */
     .main-about {
-        margin: 5rem 0rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .container-about-mindy {
+        gap: 3rem;
+    }
+
+    .section-about-img img {
+        width: 100%;
+        height: auto;
     }
     /* section products */
     /* section offer */
@@ -213,14 +227,35 @@ a {
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
-    /* section navbar */
+    /* section about */
+    .main-about {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .container-about-mindy {
+        gap: 3rem;
+    }
+
+    .section-about-img img {
+        width: 100%;
+        height: auto;
+    }
+    /* section products */
+    /* section offer */
+    /* section blog */
 }
 
 /* small pc: 768px a 992px (md | col-md-x) */
 @media only screen and (min-width: 768px) {
-    .section-about-img img {
-        width: 30vw;
+    .main-about {
+        margin-top: 10rem;
     }
+
+    .section-about-img {
+        width: 35%;
+    }
+
     .section-about-txt {
         width: 60%;
     }
@@ -228,12 +263,10 @@ a {
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
 @media only screen and (min-width: 992px) {
-    /* section navbar */
 }
 
 /* large pc: 1200px a 1400 (xl | col-xl-x) */
 @media only screen and (min-width: 1200px) {
-    /* section navbar */
 }
 
 /* large pc: 1400 + (xl | col-xl-x) */
