@@ -82,7 +82,11 @@ function createCard({ imagen, nombre, descripcion, precio, _id, stock }) {
         <div class="card-body">
           <h5 class="card-title">${nombre}</h5>
           <p class="card-text">$ ${precio}</p>
-          <button class="btn btn-primary mt-auto" onclick='addToCart("${_id}")'>Agregar al carrito</button>
+          <div class="d-flex justify-content-around mt-auto">
+            <button class="btn btn-primary" onclick='addToCart("${_id}")'>Agregar al carrito</button>
+            <span class="badge text-bg-warning d-flex align-items-center ${stock >=5 ? 'invisible': ' '}">Últimas ${stock} unidades</span>
+          </div>
+          
         </div>
       </div>
 
