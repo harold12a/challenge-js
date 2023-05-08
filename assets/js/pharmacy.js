@@ -22,7 +22,7 @@ async function fetchData(url) {
     pharmacyProducts = data.products.filter(
       (product) => product.tipo === "Medicamento"
     );
-
+    refresh_cart_in_navbar();
     if (pharmacyProducts.length == 0) {
       printEmpty();
     } else {
@@ -53,11 +53,11 @@ async function filterData() {
 fetchData(url);
 
 function printCards(products) {
-    console.log(products);
+  console.log(products);
   const cardsContainer = document.getElementById("cardsContainer");
-  cardsContainer.innerHTML = '';
-  products.forEach(product => {
-    cardsContainer.appendChild(createCard(product))
+  cardsContainer.innerHTML = "";
+  products.forEach((product) => {
+    cardsContainer.appendChild(createCard(product));
   });
 }
 
@@ -72,19 +72,45 @@ function printEmpty() {
 function createCard({ imagen, nombre, descripcion, precio, _id, stock }) {
   let div = document.createElement("div");
   div.id = _id;
-  div.className = "card card-mindy";
+  div.className = "col-lg-2 col-md-4 col-sm-6 mb-4 mx-4";
 
   div.innerHTML = `
-    <img src="${imagen} alt="${nombre} image">
-    <div class="card-description">
-        <div class="card-title">
-            <h4 class="text-center">${nombre}</h4>
+  <div class="card h-100">
+        <div class="ratio ratio-4x3">
+          <img src="${imagen}" alt="${nombre} image" class="card-img-top img-fluid">
         </div>
-        <div class="card-link d-flex justify-content-evenly align-items-center">
-            <h2>$ ${precio}</h2>
+        <div class="card-body">
+          <h5 class="card-title">${nombre}</h5>
+          <p class="card-text">$ ${precio}</p>
+          <button class="btn btn-primary mt-auto" onclick='addToCart("${_id}")'>Agregar al carrito</button>
         </div>
-    </div>
+      </div>
+
     `;
 
   return div;
 }
+
+
+let addToCart = (producto_id) => {
+    let storage = localStorage.getItem('cart');
+    let data = [];
+  
+    if (storage?.length>0) {
+      data = JSON.parse(storage)
+    }
+  
+    let contador_unidades = document.getElementById("cart-count");
+    data.push(producto_id);
+    contador_unidades.innerHTML = ``
+    contador_unidades.innerHTML = data.length
+  
+    localStorage.setItem('cart', JSON.stringify(data));
+  }
+
+  function refresh_cart_in_navbar() {
+    let data_cart = JSON.parse(localStorage.getItem('cart')) ?? []
+    let contador_unidades = document.getElementById("cart-count");
+    contador_unidades.innerHTML = ``
+    contador_unidades.innerHTML = data_cart.length
+  }
