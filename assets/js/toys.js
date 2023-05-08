@@ -111,6 +111,9 @@ function createToyCard(producto) {
                 </button>
             </li>
         </ul>
+        <div class="last-und ${(producto.stock >= 5) ? 'invisible' : ''}">
+            <p class="m-0">últimas ${producto.stock} unidades</p>
+        </div>
         <div class="card-description">
             <div class="card-title">
                 <h4 style="text-align:center" >${producto.nombre}</h4>
