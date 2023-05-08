@@ -1,0 +1,26 @@
+
+.main-favorites {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+.main-favorites h1 {
+    margin-bottom: 1rem;
+}
+
+.container-fav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-fav {
+    width: 25%;
+    height: auto;
+}
+
+.card-body {
+    padding-left: 2rem;
+}
