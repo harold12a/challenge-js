@@ -10,4 +10,4 @@ Working group for PROtalent | Mindhub
 
 ### View online in
 
-[Github pages](https://harold12a.github.io/challenge-js/pages/)
+[Github pages](https://harold12a.github.io/challenge-js/)
