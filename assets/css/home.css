@@ -1,0 +1,251 @@
+:root
+{
+    --pink-beige: #F9DBBD;
+    --pink-light: #FFA5AB;
+    --pink-medium: #DA627D;
+    --pink-light-dark: #A53860;
+    --pink-dark: #450920;
+    --pink-light-op: #c3898d7d;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------------------- hero---------------*/
+.hero-header {
+    background: url(../images/hero.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.2;
+    gap: 0.8rem;
+}
+
+.hero-container h1{
+    font-size: 5.525rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--pink-medium);
+}
+
+.hero-container h2{
+    font-size: 3.175rem;
+    text-transform: uppercase;
+}
+
+.hero-container p{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+/*.btn-play {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: 16px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    outline: none !important;
+    padding: 18px 20px 20px 28px;
+    background: white;
+}
+
+.btn-play:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    left: -1px;
+    border-left: 16px solid var(--primary);
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        opacity: 0;
+    }
+}*/
+
+/*---------- about us -----------*/
+
+.text {
+    color: var(--pink-medium);
+}
+
+.border-mindy {
+    border-left: 5px solid var(--pink-medium);
+    padding-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.btn-hover-about:hover {
+    color: var(--pink-light-dark);
+}
+
+.container-about-mindy h1,
+.container-prod-mindy h1,
+.container-offer-mindy h1,
+.header-blog-mindy h1 {
+    font-size: 3.645rem;
+}
+
+.container-about-mindy h4 {
+    font-size: 2.435rem;
+}
+
+.container-about-mindy h6,
+.container-about-mindy p,
+.container-about-mindy button,
+.container-prod-mindy h6,
+.container-offer-mindy h6,
+.container-offer-mindy p,
+.header-blog-mindy h6 {
+    font-size: 1.6rem;
+}
+
+.p-mision-vision {
+    padding: 2rem;
+}
+
+/*--------- cards products --------*/
+
+.header-prod-mindy {
+    padding: 10%;
+}
+
+.container-prod-mindy {
+    text-transform: uppercase;
+}
+
+.container-prod-mindy h1 {
+    color: #212529;
+    font-weight: 300;
+}
+
+.container-prod-mindy h6 {
+    color: var(--pink-light-dark);
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*------- offer -----------*/
+
+.main-offer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+
+.flex-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bg-offer {
+    background: url(../images/offer.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+.border-mindy-dark {
+    border-left: 5px solid var(--pink-light-dark);
+}
+
+.link-as-btn {
+    align-self: flex-start;
+    display: flex;
+    gap: 2rem;
+}
+
+.link-as-btn a {
+    font-size: 1.6rem;
+    padding: 2rem 4rem;
+}
+
+/*----------blog -----------*/
+
+.main-blog-mindy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    font-size: 1.6rem;
+}
+
+.flex-blog-mindy {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+/*----------footer -----------*/
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}

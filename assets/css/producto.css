@@ -1,0 +1,63 @@
+:root
+{
+    --pink-beige: #F9DBBD;
+    --pink-light: #FFA5AB;
+    --pink-medium: #DA627D;
+    --pink-light-dark: #A53860;
+    --pink-dark: #450920;
+    --pink-light-op: #c3898d7d;
+    --pink-medium-op: #da627ca3;
+}
+
+.container-form {
+  width: 40vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--pink-light);
+
+  -webkit-box-shadow: 0px 0px 30px 0px var(--pink-medium-op);
+  -moz-box-shadow: 0px 0px 30px 0px var(--pink-medium-op);
+  box-shadow: 0px 0px 30px 0px var(--pink-medium-op);
+}
+
+.btn-mindy {
+  background-color: var(--pink-light-dark);
+  color: white;
+}
+
+.btn-mindy:hover {
+  border-color: var(--pink-light-dark);
+  color: white;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+textarea.form-control {
+  height: 100px;
+}
+
+.input-group-text {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  height: calc(1.99em + 1.3rem + 2px);
+}
+
+div.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 10px auto; /* Reduce el margen en pantallas pequeñas */
+  }
+}

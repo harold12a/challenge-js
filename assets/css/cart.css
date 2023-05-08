@@ -1,0 +1,93 @@
+:root
+{
+    --pink-beige: #F9DBBD;
+    --pink-light: #FFA5AB;
+    --pink-medium: #DA627D;
+    --pink-light-dark: #A53860;
+    --pink-dark: #450920;
+    --pink-light-op: #c3898d7d;
+}
+
+/* ------ CART ------ */
+
+.card-cart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ------ MEDIA ------ */
+
+/* phones: <576px (xs | col-x) */
+@media only screen and (max-width: 575px) {
+    .back-cart {
+        margin: auto 1rem;
+    }
+
+    .card-cart {
+        width: 90%;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+}
+
+/* tablets: 576px a 768px (sm | col-sm-x) */
+@media only screen and (min-width: 576px) {
+    .back-cart {
+        margin: auto 1rem;
+    }
+
+    .card-cart {
+        width: 85%;
+        padding: 2rem;
+        gap: 2.5rem;
+    }
+}
+
+/* small pc: 768px a 992px (md | col-md-x) */
+@media only screen and (min-width: 768px) {
+    .card-cart {
+        width: 80%;
+        gap: 0;
+    }
+
+    .div-cart {
+        padding-right: 2rem;
+    }
+
+    .summary {
+        border-left: 0.2rem solid var(--pink-medium);
+        padding-left: 2rem;
+    }
+}
+
+/* medium pc: 992px a 1200px (lg | col-lg-x) */
+@media only screen and (min-width: 992px) {
+    .card-cart {
+        width: 75%;
+        padding: 3rem 4rem;
+    }
+
+    .div-cart {
+        padding-right: 3rem;
+    }
+
+    .summary {
+        padding-left: 3rem;
+    }
+}
+
+/* large pc: 1200px a 1400 (xl | col-xl-x) */
+@media only screen and (min-width: 1200px) {
+    .card-cart {
+        padding: 4rem 5rem;
+    }
+
+    .div-cart {
+        padding-right: 4rem;
+    }
+
+    .summary {
+        padding-left: 4rem;
+    }
+}
